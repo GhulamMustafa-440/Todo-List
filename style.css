@@ -102,8 +102,10 @@ h1 {
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 5px;
+    margin-left: 15px;
+    transition: all 0.3s;
 }
+
 
 .completed {
     text-decoration: line-through;
@@ -119,5 +121,21 @@ h1 {
 @media screen and (max-width: 375px) {
     body {
         width: 350px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        width: 300px;
+    }
+    .delete {
+        border: none;
+        background: #19A68c;
+        height: 36px;
+        width: 75px;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-left: 15px;
     }
 }
