@@ -44,11 +44,16 @@ const editButton = (e) => {
     const p = event.parentElement
     const a = p.previousSibling
     input.value = a.innerHTML
+    input.focus()
     add.style.display = 'none'
     update.style.display = 'block'
     value = a;
 }
 const Update = () => {
+    if (input.value == 0) {
+        alert('Please Enter a Task')
+        return;
+    }
     add.style.display = 'block'
     update.style.display = 'none'
     value.innerHTML = input.value
